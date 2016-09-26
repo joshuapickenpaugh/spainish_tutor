@@ -1,4 +1,8 @@
-﻿Public Class frmMain
+﻿'Joshua Pickenpaugh
+'September 26th, 2016
+'"Spainish Tutor"
+
+Public Class frmMain
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
 
@@ -12,12 +16,15 @@
         'Clears the text boxes:
         txtRed.Clear()
         txtRed.BackColor = Color.White
+        btnRed.Enabled = True
 
         txtBlue.Clear()
         txtBlue.BackColor = Color.White
+        btnBlue.Enabled = True
 
         txtGreen.Clear()
         txtGreen.BackColor = Color.White
+        btnGreen.Enabled = True
 
     End Sub
 
@@ -33,10 +40,13 @@
         If strRed = "ROJO" Then
             txtRed.Clear()
             txtRed.BackColor = Color.Red
-            txtRed.Text = "Correct!"
+            txtRed.Text = "Correct"
+            btnRed.Enabled = False
         Else
             txtRed.Clear()
+            txtRed.Text = "Incorrect"
             MsgBox("The correct answer is 'Rojo'", , "WRONG!")
+            btnRed.Enabled = False
         End If
     End Sub
 
@@ -52,10 +62,13 @@
         If strBlue = "AZUL" Then
             txtBlue.Clear()
             txtBlue.BackColor = Color.Blue
-            txtBlue.Text = "Correct!"
+            txtBlue.Text = "Correct"
+            btnBlue.Enabled = False
         Else
             txtBlue.Clear()
+            txtBlue.Text = "Incorrect"
             MsgBox("The correct answer is 'Azul'", , "WRONG!")
+            btnBlue.Enabled = False
         End If
 
     End Sub
@@ -71,11 +84,14 @@
         'Calculates:
         If strGreen = "VERDE" Then
             txtGreen.Clear()
-            txtGreen.BackColor = Color.Green
-            txtGreen.Text = "Correct!"
+            txtGreen.BackColor = Color.Lime
+            txtGreen.Text = "Correct"
+            btnGreen.Enabled = False
         Else
             txtGreen.Clear()
+            txtGreen.Text = "Incorrect"
             MsgBox("The correct answer is 'Verde'", , "WRONG!")
+            btnGreen.Enabled = False
         End If
     End Sub
 End Class

@@ -40,7 +40,7 @@ Partial Class frmMain
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(398, 20)
-        Me.Label1.TabIndex = 0
+        Me.Label1.TabIndex = 8
         Me.Label1.Text = "Enter the Spainish word and then click the color button:"
         '
         'txtGreen
@@ -49,7 +49,7 @@ Partial Class frmMain
         Me.txtGreen.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtGreen.Name = "txtGreen"
         Me.txtGreen.Size = New System.Drawing.Size(148, 26)
-        Me.txtGreen.TabIndex = 1
+        Me.txtGreen.TabIndex = 4
         Me.txtGreen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtBlue
@@ -67,7 +67,7 @@ Partial Class frmMain
         Me.txtRed.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtRed.Name = "txtRed"
         Me.txtRed.Size = New System.Drawing.Size(148, 26)
-        Me.txtRed.TabIndex = 3
+        Me.txtRed.TabIndex = 0
         Me.txtRed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'btnRed
@@ -77,7 +77,7 @@ Partial Class frmMain
         Me.btnRed.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnRed.Name = "btnRed"
         Me.btnRed.Size = New System.Drawing.Size(148, 35)
-        Me.btnRed.TabIndex = 4
+        Me.btnRed.TabIndex = 1
         Me.btnRed.Text = "&Red"
         Me.btnRed.UseVisualStyleBackColor = False
         '
@@ -88,7 +88,7 @@ Partial Class frmMain
         Me.btnBlue.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnBlue.Name = "btnBlue"
         Me.btnBlue.Size = New System.Drawing.Size(148, 35)
-        Me.btnBlue.TabIndex = 5
+        Me.btnBlue.TabIndex = 3
         Me.btnBlue.Text = "&Blue"
         Me.btnBlue.UseVisualStyleBackColor = False
         '
@@ -99,7 +99,7 @@ Partial Class frmMain
         Me.btnGreen.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnGreen.Name = "btnGreen"
         Me.btnGreen.Size = New System.Drawing.Size(148, 35)
-        Me.btnGreen.TabIndex = 6
+        Me.btnGreen.TabIndex = 5
         Me.btnGreen.Text = "&Green"
         Me.btnGreen.UseVisualStyleBackColor = False
         '
@@ -119,7 +119,7 @@ Partial Class frmMain
         Me.btnClear.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(148, 35)
-        Me.btnClear.TabIndex = 8
+        Me.btnClear.TabIndex = 6
         Me.btnClear.Text = "&Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
@@ -140,7 +140,8 @@ Partial Class frmMain
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "frmMain"
-        Me.Text = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Spainish Tutor"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
